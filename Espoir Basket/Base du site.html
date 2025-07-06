@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espoir Basket</title>
+    <link rel="stylesheet" href="Ouverture du site.css" />
+    <link rel="stylesheet" href="Edit du texte.css" />
+  </head>
+  
+
+  <div id="modal-confidentialite" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);display:flex;align-items:center;justify-content:center;z-index:1000;">
+  <div style="background:#fff;padding:30px;border-radius:10px;max-width:400px;text-align:center;">
+    <h2>Politique de confidentialité</h2>
+    <p>En poursuivant votre navigation, vous acceptez notre politique de confidentialité.</p>
+    
+     
+    <button id="accepter-confidentialite" style="margin-top:20px;padding:10px 20px;">Accepter</button>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('modal-confidentialite');
+    var btn = document.getElementById('accepter-confidentialite');
+    btn.onclick = function() {
+      modal.style.display = 'none';
+    };
+  });
+</script>
+  
+    <body>
+      <div id="intro-animation">
+  <span>Espoir Jeunesse</span>
+</div>
+      <div class="header">
+        
+      </div>
+
+       <script>
+    window.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    var intro = document.getElementById('intro-animation');
+    if (intro) {
+      intro.style.opacity = '0'; 
+      setTimeout(function() {
+        intro.style.display = 'none';
+      }, 1000);
+    }
+  }, 2300); 
+});
+      </script>
+    </body>
+  <nav class="vertical-menu">
+    <ul>
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#inscription">Inscription</a></li>
+    </ul>
+  </nav>
+  <section id="home">
+    <h1>Bienvenue sur le site d'Espoir Jeunesse</h1>
+    <h2>Le site de l'association</h2>
+    <p>Notre mission est de fournir un environnement positif et inclusif pour les joueurs de 15 à 17 ans.</p>
+    <p>Nous organisons des événements, des activités et plus encore !</p>
+    <p>Pour plus d'informations, consultez les sections ci-dessous.</p>
+  </section>
+  <section id="about">
+    <h2>À propos</h2>
+
+    <p>Nous sommes un groupe de jeunes adultes qui veulent unir leur forçe afin d'aider les jeunes. Chaque jeune mérite de bouger
+      dans un environnement sain et positif. Nous croyons que le sport peut changer des vies et nous sommes là pour aider les jeunes à réaliser leur potentiel.</p>
+    </p>
+    
+  </section>
+  <section id="services">
+    <h2>Services</h2>
+
+    <p>Nous offrons une variété de services pour les jeunes de 15 à 17 ans :</p>
+    <ul>
+      <li>Entraînements</li>
+      <li>Événements</li>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    
+    <p>Pour nous contacter, veuillez envoyer un e-mail à <strong> <p> Espoirjeunesses@gmail.com</p> </strong>
+
+    </section>
+
+    <section id="inscription">
+  <h2>Inscription</h2>
+  <p>Pour vous inscrire, veuillez remplir le formulaire ci-dessous en appuyant sur le bouton "S'inscrire".</p>
+  <a href="inscription.html" class="button">S'inscrire</a>
+
+  </section>
+</html>

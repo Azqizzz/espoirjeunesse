@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="inscription.css">
+</head>
+<h1>Inscription Espoir Basket</h1>
+       
+    <body>
+    <div id="inscription">
+    <div class="social-icons">
+        <a href="#" title="Facebook"><span> <img src="facebook-icon.png" alt="Facebook"></span></a>
+        <a href="#" title=""><span> <img src=".png" alt="Google"></span></a>
+        <a href="#" title="Twitter"><span> <img src="twitter-icon.png" alt="Twitter"></span></a>
+    </div>
+    <h1>Inscription</h1>
+    <form action="https://formspree.io/f/mpwrpqrd" method="POST">
+        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+        <input type="tel" id="tel" name="tel" placeholder="Téléphone" pattern="[0-9]{10}" required>
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
+        <input type="number" id="age" name="age" min="15" max="18" placeholder="Âge" required>
+        <select id="sexe" name="sexe" required>
+            <option value="" disabled selected>Sexe</option>
+            <option value="masculin">Masculin</option>
+            <option value="feminin">Féminin</option>
+            <option value="autre">Autre</option>
+        </select>
+        <button type="submit">S'inscrire</button>
+    </form>
+    <div class="form-links">
+    </div>
+</div>
+</body>
+</html>

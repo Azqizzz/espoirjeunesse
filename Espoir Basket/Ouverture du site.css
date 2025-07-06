@@ -1,0 +1,32 @@
+#intro-animation {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: linear-gradient(135deg, #000 60%, #fff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut 1s 2.2s forwards;
+  transition: opacity 1s;
+}
+
+#intro-animation span {
+  color: #fff;
+  font-size: 2.5em;
+  font-family: 'Oswald', Arial, sans-serif;
+  letter-spacing: 0.15em;
+  text-shadow: 2px 2px 8px #11057a, 0 0 20px #535353;
+  animation: textPop 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+  background: linear-gradient(90deg, #fff 50%, #000 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+@keyframes textPop {
+  0% { transform: scale(0.7); opacity: 0; }
+  60% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}

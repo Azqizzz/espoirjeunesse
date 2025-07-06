@@ -1,0 +1,134 @@
+.vertical-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 160px; 
+  background: hsl(253, 98%, 16%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+  box-shadow: 2px 0 12px rgba(183, 28, 28, 0.08);
+  z-index: 100;
+}
+
+.vertical-menu a {
+  width: 110px;
+  height: 56px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+  justify-content: flex-start;
+  padding: 0 left 45px;
+  display: flex;
+  align-items: center;
+}
+
+.vertical-menu a:hover,
+.vertical-menu a.active {
+  background: linear-gradient(90deg, #ffd700 60%, #335ca7 100%);
+  color: #222;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.13);
+}
+
+/* Décale le contenu principal à droite de la barre */
+body {
+  background: linear-gradient(120deg, #fff 0%, #ffebee 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: hsl(253, 98%, 16%);
+  display: block;
+  padding-left: 80px; /* largeur de la barre */
+}
+
+/* Sections larges et responsives */
+section {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(183, 28, 28, 0.08);
+  padding: 32px 28px;
+  margin: 40px auto 32px auto;
+  width: 90vw;
+  max-width: 900px;
+  transition: box-shadow 0.2s;
+}
+section:hover {
+  box-shadow: 0 8px 32px rgba(183, 28, 28, 0.15);
+}
+
+/* Titres */
+h1,
+h2 {
+  color: hsl(253, 98%, 16%);
+  font-family: "Montserrat", Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+/* Responsive : barre horizontale et sections pleine largeur sur mobile */
+@media (max-width: 900px) {
+  body {
+    padding-left: 0;
+    padding-top: 70px;
+  }
+  .vertical-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-shadow: 0 2px 12px rgba(183, 28, 28, 0.08);
+  }
+  .vertical-menu ul {
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
+  }
+  .vertical-menu a {
+    width: 48px;
+    height: 48px;
+    font-size: 1em;
+  }
+  section {
+    margin: 90px 2vw 32px 2vw;
+    width: 96vw;
+    max-width: 98vw;
+    padding: 18px 4vw;
+  }
+}
+
+/* Beauté et centrage du bouton S'inscrire */
+a.button,
+.button,
+button {
+  display: block;
+  margin: 28px auto 0 auto;
+  background: linear-gradient(90deg, hsl(253, 98%, 16%));
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 40px;
+  font-size: 1.2em;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(183, 28, 28, 0.1);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+a.button:hover,
+.button:hover,
+button:hover {
+  background: linear-gradient(90deg, hsl(253, 98%, 16%));
+  transform: translateY(-2px) scale(1.04);
+}
